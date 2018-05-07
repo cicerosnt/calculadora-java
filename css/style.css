@@ -1,0 +1,15 @@
+.calcVisor { 
+    color:#000000; 
+    text-decoration:none; 
+    font-size:10pt; 
+    font-weight:bold; 
+    font-family:consolas; 
+    text-align: right;
+    margin: 0 2px;
+  }
+  .geral{
+    width: 100%;
+  }
+  table{
+    margin: auto auto;
+  }

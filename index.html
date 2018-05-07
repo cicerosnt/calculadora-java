@@ -1,0 +1,164 @@
+
+ <html>
+ <head>
+  <<title>Calculadora Simples em Java</title>
+  <script language="javascript" src="js/Function.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body leftmargin="0" topmargin="0"  marginwidth="0" marginheight="0">
+  <center>
+    <div class="geral" "><!-- CALCULADORA BANKLINE - DESENVOLVIDA EM 2006 -->
+
+      <table width="174" border="0" cellpadding="0" cellspacing="0" >
+        <tr>
+          <td  width="174">
+            <img src="IMG/calc_sup.gif" alt="" name="calc_sup" width="174" height="28" border="0" usemap="#calc_supMap">
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="174">
+        <tr style="height:32px;">
+          <td width="13" background="IMG/calc_visoresq.gif">
+            <img name="calc_visoresq" src="IMG/calc_visoresq.gif" width="13" height="22" border="0" alt="">
+          </td>
+          <td width="149" align="right" background="IMG/calc_visor.gif" class="calcVisor">
+            <div id="idResultado" style="position:relative; left: 0px; top: 0px; visibility:visible;">
+            0
+          </div>
+          </td>
+          <td width="12" background="IMG/calc_visordir.gif">
+            <img name="calc_visordir" src="IMG/calc_visordir.gif" width="12" height="22" border="0" alt="">
+          </td>
+        </tr>
+      </table>
+      <table width="174" border="0" cellpadding="0" cellspacing="0" >
+        <tr>
+          <td  width="174">
+            <img name="calc_sup" src="IMG/calc_linha.gif" width="174" height="10" border="0" alt="">
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="174">
+        <tr>
+          <td rowspan="4">
+            <img name="calc_esq" src="IMG/calc_esq.gif" width="8" height="105" border="0" alt="">
+          </td>
+          <td colspan="2">
+            <a href="javascript:ClickValor('7')">
+              <img name="calc_7" src="IMG/calc_7.gif" width="32" height="27" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('8')">
+              <img name="calc_8" src="IMG/calc_8.gif" width="32" height="27" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('9')">
+              <img name="calc_9" src="IMG/calc_9.gif" width="30" height="27" border="0" alt="">
+            </a>
+          </td>
+          <td><a href="javascript:ClickOperacao('E')">
+            <img name="calc_ce" src="IMG/calc_ce.gif" width="32" height="27" border="0" alt="">
+          </a>
+        </td>
+          <td colspan="2">
+            <a href="javascript:ClickOperacao('C')">
+              <img name="calc_c" src="IMG/calc_c.gif" width="32" height="27" border="0" alt="">
+            </a>
+          </td>
+          <td rowspan="4">
+            <img name="calc_dir" src="IMG/calc_dir.gif" width="8" height="105" border="0" alt="">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <a href="javascript:ClickValor('4')">
+              <img name="calc_4" src="IMG/calc_4.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('5')">
+              <img name="calc_5" src="IMG/calc_5.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('6')">
+              <img name="calc_6" src="IMG/calc_6.gif" width="30" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickOperacao('/')">
+              <img name="calc_div" src="IMG/calc_div.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td colspan="2">
+            <a href="javascript:ClickOperacao('%')">
+              <img name="calc_porcent" src="IMG/calc_porcent.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <a href="javascript:ClickValor('1')">
+              <img name="calc_1" src="IMG/calc_1.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('2')">
+              <img name="calc_2" src="IMG/calc_2.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('3')">
+              <img name="calc_3" src="IMG/calc_3.gif" width="30" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickOperacao('*')">
+              <img name="calc_mult" src="IMG/calc_mult.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td rowspan="2" colspan="2">
+            <a href="javascript:ClickOperacao('=')">
+              <img name="calc_igual" src="IMG/calc_igual.gif" width="32" height="52" border="0" alt="">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <a href="javascript:ClickValor('0')">
+              <img name="calc_0" src="IMG/calc_0.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickValor('.')">
+              <img name="calc_virg" src="IMG/calc_virg.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickOperacao('+')">
+              <img name="calc_mais" src="IMG/calc_mais.gif" width="30" height="26" border="0" alt="">
+            </a>
+          </td>
+          <td>
+            <a href="javascript:ClickOperacao('-')">
+              <img name="calc_menos" src="IMG/calc_menos.gif" width="32" height="26" border="0" alt="">
+            </a>
+          </td>
+        </tr>
+      </table>
+      <table width="174" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td  width="174">
+            <img name="calc_sup" src="IMG/calc_inf.gif" width="174" height="10" border="0" alt="">
+          </td>
+        </tr>
+      </table>
+      <map name="calc_supMap">
+        <area shape="rect" coords="144,0,171,25" onClick="javascript:self.close();">
+      </map>
+    </div>
+  </center>
+</body>
+</html>
